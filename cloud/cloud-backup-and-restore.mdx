@@ -76,7 +76,7 @@ Key constraints to keep in mind:
 - On undersized tiers the backup job may time out, be terminated due to memory exhaustion,
   or fail mid-run — leaving you without a usable recovery point.
 
-**Example:** A product running on a **PS10** (entry-level Performance tier) that hosts a
+**Example:** A product running on a **PS10** (the smallest Production instance type) that hosts a
 **500 GB database** will reliably fail to complete backups. The instance does not have enough
 resources — disk IOPS, memory, or both — to snapshot a database of that size. Customers in this
 situation must upgrade to a higher tier before backups can succeed.
